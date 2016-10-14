@@ -5,9 +5,11 @@ html{
 }
 body{
     box-sizing: border-box;
-    background-image: url(../app/background.jpg);
+    background-image: url(../app/background.JPG);
     background-size: cover;
     position:absolute; top:0; bottom:0; right:0; left:0;
+    border: 1px solid transparent;
+    padding-bottom: 20px;
 }
 
 #footerTable {
