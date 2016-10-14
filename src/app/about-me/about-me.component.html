@@ -1,0 +1,43 @@
+  <table id="about-me-table" border="0">
+    <tr>
+      <th class="picture-cell" rowspan="4">
+        <img id="profile-picture" src="../app/shared/images/profilepicture.jpg"/>
+      </th>
+      </tr>
+    <tr>
+      <div class="text-cell">
+          <h3 class="text-cell-title">Name:</h3>
+          <p style="padding-left: 5%;">{{name}}</p>
+        </div>
+        <div class="text-cell">
+          <h3 class="text-cell-title">Education:</h3>
+          <li style="list-style-type: none; padding-left: 5%;" 
+            *ngFor="let school of schools">
+            {{school}}
+          </li>
+        </div>
+        <div class="text-cell">
+          <h3 class="text-cell-title">Life:</h3>
+          <p style="padding-left: 5%; padding-right: 5%">{{life}}</p>
+        </div>
+      <!--<td class="anyam">
+        <div class="text-cell">
+          <h3 class="text-cell-title">Name:</h3>
+          <p>lorem</p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <div class="text-cell">
+        <h3 class="text-cell-title">Education:</h3>
+        <p>lorem</p>
+      </div>
+      </tr>
+    <tr>
+        <div class="text-cell">
+        <h3 class="text-cell-title">Else:</h3>
+        <p>lorem</p>
+        </div>
+      -->
+      </tr>
+  </table>

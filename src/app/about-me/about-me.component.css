@@ -1,0 +1,41 @@
+h2 {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#about-me-table {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+table {
+    margin-top: 5%;
+}
+
+.picture-cell {
+    background-color: transparent;
+    width: 50%;
+}
+
+.text-cell {
+    background-color: lightsteelblue;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.text-cell-title {
+    /*position: absolute;
+    top: 0px;
+    */
+    vertical-align: top;
+}
+
+#profile-picture{
+    opacity: 1;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
