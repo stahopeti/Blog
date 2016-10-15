@@ -6,6 +6,8 @@ import { AboutMeComponent } from '../app/about-me/about-me.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  title = 'app works!';
+  show = true;
+
 }

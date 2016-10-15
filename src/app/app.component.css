@@ -1,233 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html{
-    height: 100vh;
     padding: 0;
-    font-family: monospace; 
+    font-family: 'Oxygen', sans-serif; 
 }
 body{
-    box-sizing: border-box;
-    background-image: url(./assets/images/background.JPG);
-    background-size: cover;
-    position:absolute; top:0; bottom:0; right:0; left:0;
-    border: 1px solid transparent;
-    padding-bottom: 20px;
+    z-index: 1;
 }
 
-#footerTable {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-body{
-    /*position*/
-    /*display*/
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    /*color*/
+#background-image{
+    z-index: -1;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
     background-color: #607D8B;
-    /*other*/
-}
+    background-image: url(./assets/images/background.JPG);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+/*
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+*/} 
 
-#mainTable{
-    
-    /*position*/
-    /*display*/
+#main-table{
+    display: table;
     width: 80%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    /*color*/
-    /*other*/
-    font-size: 30px;
-    
-    
+    font-size: 2em;
 }
 
-.tdMain{
-    
-    
-    /*position*/
-    /*display*/
+.td-main{
+    display: table-cell;
     width: 33%;
-    height: 40px;
     text-align: center;
-    /*color*/
-    background-color: #ECEFF1;
-    /*other*/
     -webkit-transition: all 0.23s ease;
-    
 }
 
-.tdMain:hover{
-    
-    
-    /*position*/
-    /*display*/
-    /*color*/
+.td-main:hover{
     background-color: #CFD8DC;
-    /*other*/
     -webkit-transform:scale(1.08);
-    
+}
+/*
+#main-table:nth-child(1){
+    float: left;
+    width: 33%;
+    background: red;
 }
 
-.tdMain:focus{
-    
-    /*position*/
-    /*display*/
-    /*color*/
-    background-color:cadetblue;
-    color: aliceblue;
-    /*other*/
-    -webkit-transform:scale(1.08);
-    transform:scale(1.08);
-    
-    
+div#main-table:nth-child(2){
+    margin-left: 33%;
+    background: blue;
 }
 
-h2{
-    
-    /*position*/
-    /*display*/
-    margin-left: 10%;
-    /*color*/
-    color: #ECEFF1;
-    /*other*/
-    font-family: monospace;
-    
-}
-
-img{
-    
-    /*position*/
-    position: relative;
-    /*display*/
-    max-width: 80%;
-    max-height: 500px;
-    padding-bottom: 35px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /*color*/
-    /*other*/
-    
-}
-  
-.panel{
-    
-    /*position*/
-    /*display*/
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    align-content: center;
-    align-items: center;
-    /*color*/
-    color: azure;
-    background-color: #263238;
-    /*other*/
-    
-}
-
-.panel > h1 {
-    
-    /*position*/
-    /*display*/
-    text-align: center;
-    /*color*/
-    color: #ECEFF1;
-    /*other*/
-    font-family: monospace;
-    
-}
-
-.img_div{
-    
-    /*position*/
-    /*display*/
-    display: none;
-    /*color*/
-    /*other*/
-    
-}
-
-#footer{
-
-    /*position*/
-    bottom: 0;
-    position:static;
-    /*display*/
-    height: 50px; 
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    /*color*/
-    /*other*/
-    
-}
-
-
-#tdFooter{
-    
-    /*position*/
-    /*display*/
-    /*color*/
-    /*other*/
-    font-family: monospace;
-    
-}
-
-.tdTile{
-    
-    
-    /*position*/
-    /*display*/
-    width: 100px;
-    height: 100px;
-    color: #263238;
-    /*color*/
-    background-color: #263238;
-    /*other*/
-    
-}
-
-.tdTile:hover{
-    
-    /*position*/
-    /*display*/
-    /*color*/
-    background-color: #ECEFF1;
-    /*other*/
-    
-}
-
-#tilesDiv{
-    
-    /*position*/
-    position:absolute;
-    left:0; right:0;
-    top:0; bottom:0;
-	margin:auto;
-	
-    /*display*/
-    width: 500px;
-    height: 400px;
-	max-width:100%;
-	max-height:100%;
-	overflow:visible;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 35px;
-    font-family: monospace;
-    /*color*/
-    /*other*/
-    
-    
-}
-
-
-
-    /*position*/
-    /*display*/
-    /*color*/
-    /*other*/
+div#main-table:nth-child(3){
+    margin-left: 66%;
+}*/

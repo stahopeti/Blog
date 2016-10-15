@@ -8,31 +8,19 @@
 </head>
 <body>
 
-     <table id="mainTable" >
-    
-        <tr>
-         <td class="tdMain">Magamról</td>
-         <td class="tdMain">Photoshop</td>
-         <td class="tdMain">Analóg fotózás</td>
-         </tr>
-         
-    </table>
+    <div id="background-image">
 
-<about-me></about-me>
-    
-<footer>
-    <table id="footerTable">
-    <tr>
-        <td>
-        <a href="https://www.facebook.com/stahopeti"  target="_blank"><img src="./assets/images/allaround/facebook-icon-circle.png" alt="Facebook"></a>
-        </td>
-        <td>
-        <a href="mailto:stahopeti@gmail.com"  target="_top"><img src="./assets/images/allaround/gmail.png" alt="Gmail"></a>
-        </td>
-        </tr>
-            
-        </table>
-</footer>
-    
+    </div>
+
+     <div id="main-table" >
+            <div class="td-main">About me</div>
+            <div class="td-main">Photoshop</div>
+            <div class="td-main">Recipes</div>
+    </div>
+
+    <div *ngIf="show">
+        <about-me></about-me>
+    </div>
+        
 </body>
 </html>
