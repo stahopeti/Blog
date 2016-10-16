@@ -13,20 +13,27 @@
     </div>
 
      <div id="main-table" >
-            <div class="td-main">
+            <div class="td-main" (click)="setAboutMeActive()">
                 <p>About me</p>
             </div>
-            <div class="td-main">
+            <div class="td-main" (click)="setPhotoshopActive()">
                 <p>Photoshop</p>
             </div>
-            <div class="td-main">
+            <div class="td-main" (click)="setRecipesActive()">
                 <p>Recipes</p>
             </div>
     </div>
 
-    <div *ngIf="show">
+    <div *ngIf="aboutMeActive">
         <about-me></about-me>
     </div>
         
+    <div *ngIf="photoshopActive">
+        <photoshop></photoshop>
+    </div>
+    
+    <div *ngIf="recipesActive">
+        <recipes></recipes>
+    </div>
 </body>
 </html>

@@ -1,15 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-photoshop',
+  selector: 'photoshop',
   templateUrl: './photoshop.component.html',
   styleUrls: ['./photoshop.component.css']
 })
 export class PhotoshopComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+    console.log("photoshop constructor");
+  }
 
   ngOnInit() {
+    console.log("photoshop OnInit");
   }
 
 }
