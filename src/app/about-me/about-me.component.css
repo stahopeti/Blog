@@ -1,45 +1,53 @@
-h2 {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
 #about-me-table {
+    position: relative;
     width: 80%;
+    margin-top: 1em;
     margin-left: 10%;
     margin-right: 10%;
+    overflow: auto;
+    text-align: center;
 }
 
-.picture-cell {
-    background-color: transparent;
+#picture-container, #text-container{
     width: 50%;
+}
+
+#picture-container{
+    position: absolute;
+    top:0; bottom: 0; left: 0; right: 50%;
 }
 
 #profile-picture{
     opacity: 1;
-    width: 70%;
+    max-width: 80%;
+    max-height: 70%;
     margin: auto;
-    margin-left: 15%;
-    margin-right: 15%;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
     border-radius: 0.5em;
 }
 
-.text-cell {
-    left: 0;
-    right: 0;
-    z-index: 0;
-    
-    background-color: lightsteelblue;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-    border-radius: 0.5em;
+#text-container{
+    float: right;
+    text-align: left;
+}
 
+
+.text-cell {    
+    background-color: lightsteelblue;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
     padding-bottom: 1%;
 }
 
 .text-cell-title {
-    padding-top: 1%;
+    margin: 0 auto;
     padding-left: 1%;
     vertical-align: top;
+}
+
+.text-cell:last-child{
+    margin: 0 auto;
 }

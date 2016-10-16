@@ -24,7 +24,6 @@ body{
     background-attachment: fixed;
     background-size: cover;
 
-
     -webkit-filter: blur(2px);
     -moz-filter: blur(2px);
     -o-filter: blur(2px);
@@ -42,7 +41,7 @@ body{
 
 .td-main{
     display: table-cell;
-    width: 33%;
+    width: 33.33%;
     text-align: center;
     border-radius: 0.2em;
     -webkit-transition: all 0.23s ease;
@@ -50,7 +49,6 @@ body{
 }
 
 .td-main p{
-    margin: 2%;
     font-size: 1.5em;
 }
 
@@ -58,18 +56,3 @@ body{
     background-color: #CFD8DC;
     -webkit-transform:scale(1.08);
 }
-/*
-#main-table:nth-child(1){
-    float: left;
-    width: 33%;
-    background: red;
-}
-
-div#main-table:nth-child(2){
-    margin-left: 33%;
-    background: blue;
-}
-
-div#main-table:nth-child(3){
-    margin-left: 66%;
-}*/
